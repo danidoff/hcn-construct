@@ -1,0 +1,233 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+    background-color: black;
+}
+
+.section {
+    /*margin-top: 50px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 35px 20px;
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* Full-Screen Background Image for Home Section (Desktop Only) */
+.fullScreenImageSection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* HEADER STYLES */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navList {
+    display: flex; /* Asigură-te că meniul este orizontal */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navList li {
+    margin: 0;
+}
+
+.navList a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navList a:hover {
+    color: #f4a261;
+}
+
+.imageContainer {
+    /*margin-top: 20px;*/
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.listContainer {
+    margin-top: 30px;
+}
+
+.listTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px; 
+    list-style-type: disc;
+}
+
+.list li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+
+/* Section title should be centered and always on top */
+.titleContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titleContainer h1 {
+    /*margin-top: 50px;*/
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.textContainer {
+    flex: 1;
+    color: white;
+    text-align: left;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.listContainer {
+    margin-top: 20px;
+}
+
+.listTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.list {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .contentContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textContainer, .imageContainer {
+        flex: none;
+        width: 85%;
+    }
+
+    .fullScreenImageSection {
+        background-image: none !important; /* Disable full background on mobile */
+    }
+}
+
+/* Default text styling for other sections */
+/*.defaultText {*/
+/*    font-size: 1.2rem;*/
+/*    line-height: 1.6;*/
+/*    max-width: 800px;*/
+/*}*/
+
+/* Home section text - narrower and aligned to the left */
+.homeText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 50%; /* Reduce width */
+    text-align: left;
+    margin-left: 10%;
+    background: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 900px) {
+    .homeText {
+        max-width: 90%; /* Make it wider on mobile */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

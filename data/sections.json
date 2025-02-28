@@ -1,0 +1,102 @@
+[
+  {
+    "id": "home",
+    "title": "HCN Construct",
+    "byTitle": "Construct",
+    "content": "Oferă servicii de demolări și excavații în toate domeniile de activitate, industriale sau rezidențiale. Unul dintre obiectivele noastre este să investim permanent în oameni și în flota de utilaje pe care o deținem astfel încât să putem oferi clienților servicii de cea mai bună calitate. Personalul nostru este calificat pentru a putea executa orice fel de lucrare mecanizată la cele mai ridicate standarde în condiţii de siguranţă și profesionalism.",
+    "backgroundColor": "#ff7e5f",
+    "image": "/images/home.jpg",
+    "backgroundImage": "/images/home.jpg"
+  },
+  {
+    "id": "about",
+    "title": "Despre Noi",
+    "listItems": [
+      {
+        "title": "Lucrari de demolare mecanizata",
+        "items": ["Executăm lucrări de demolare mecanizate, cu respectarea normelor tehnologice în vigoare, utilizând utilaje şi echipamente cu randament mare de lucru."]
+      },
+      {
+        "title": "Lucrari de excavatii si terasamente",
+        "items": ["Săpături-excavaţii fundaţii pentru blocuri/case/hale, amenajare şi decolmatare iazuri/canale, nivelare terenuri, compactare sol, taluzare maluri şi alte lucrări similare."]
+      },
+      {
+        "title": "Inchiriere utilaje de constructii",
+        "items": ["Furnizăm soluţii complete de închiriere utilaje pentru construcţii în toată ţara şi consultanţă cu privire la utilajele necesare în funcţie de specificul fiecărei lucrări."]
+      }
+    ],
+    "backgroundColor": "#feb47b",
+    "image": "/images/about.jpg"
+  },
+  {
+    "id": "services",
+    "title": "Servicii",
+    "listItems": [
+      {
+        "title": "Lucrari de demolare mecanizata",
+        "items": [
+          "Demolare clădiri din beton armat şi zidărie.",
+          "Demolare silozuri/buncăre beton.",
+          "Extragere/piconare placă şi fundaţii beton.",
+          "Demolare turnuri de orice dimensiune."
+        ]
+      },
+      {
+        "title": "Lucrari de excavatii si terasamente",
+        "items": [
+          "Săpături-excavaţii fundaţii pentru blocuri/case/hale.",
+          "Amenajare şi decolmatare iazuri/canale.",
+          "Nivelare terenuri, compactare sol, taluzare maluri.",
+          "Decopertare terenuri.",
+          "Realizare diguri, baraje şi canale."
+        ]
+      },
+      {
+        "title": "Închiriere utilaje de constructii",
+        "items": [
+          "Excavatoare pe şenile CATERPILLAR/KOBELCO - de la 25 la 44 tone (cupe de excavare de 1.5-2.2 mc, cupă de taluz).",
+          "Excavatoare pe şenile pentru demolări CATERPILLAR - intre 28 – 38 tone dotate cu picon (1.8-3.5 tone), pulverizator de beton (2.2-3.5 tone) şi foarfece de demolare (1.8-2.3 tone).",
+          "Buldozere CATERPILLAR - greutate 18-24 tone.",
+          "Cilindri compactori HAMM/BOMAG - 14-20 tone.",
+          "Autobasculante 8x4 - MAN/IVECO/DAF/VOLVO benă 18-22 mc."
+        ]
+      },
+      {
+        "title": "Excavatoare cu brat lung",
+        "items": [
+          "Greutate utilaj 28-34 tone",
+          "Braţ 18-21 metri",
+          "Cupă de taluz 2 metri",
+          "Cupă de excavare 0.8 metri",
+          "Decolmatare iazuri, bălţi, canale, heleştee",
+          "Săpături de mare adâncime"
+        ]
+      }
+    ],
+    "backgroundColor": "#6a11cb",
+    "image": "/images/services.jpg"
+  },
+  {
+    "id": "portfolio",
+    "title": "Portofoliu",
+    "content": "Vezi magia transformărilor noastre! În portofoliul nostru vei găsi imagini înainte și după ale clienților care au avut încredere în serviciile noastre. Fiecare detaliu este realizat cu profesionalism, respectând unicitatea fiecărei persoane.",
+    "backgroundColor": "#2575fc",
+    "image": "/images/portfolio.jpg"
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "listItems": [
+      {
+        "title": "Suntem aici pentru tine!",
+        "items": [
+          "Telefon: 0740 912 779",
+          "Locație: Strada Principala, nr.373, Vestem, Sibiu, Romania"
+        ]
+      }
+    ],
+    "notes": "Programează-te acum și lasă frumusețea ta să strălucească!",
+    "backgroundColor": "#e52d27",
+    "image": "/images/contact.jpg"
+  }
+]
