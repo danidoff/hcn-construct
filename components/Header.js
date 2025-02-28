@@ -38,7 +38,7 @@ export default function Header() {
                     <li><a href="#about" onClick={closeMenu}>Despre Noi</a></li>
                     <li><a href="#services" onClick={closeMenu}>Servicii</a></li>
                     <li><a href="#portfolio" onClick={closeMenu}>Portofoliu</a></li>
-                    <li><a href="#courses" onClick={closeMenu}>Cursuri</a></li>
+                    {/*<li><a href="#courses" onClick={closeMenu}>Cursuri</a></li>*/}
                     <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
                 </ul>
             </nav>

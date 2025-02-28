@@ -5,8 +5,8 @@ const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 const workSans = Work_Sans({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata = {
-    title: "Micropigmentare Pro - Belle Studio by Cristina Lăcău",
-    description: "Servicii profesionale de micropigmentare și cursuri acreditate.",
+    title: "HCN Construct - Lucrări de excavaţii şi terasamente Sibiu",
+    description: "HCN Consrtruct execută lucrări de excavaţii şi terasamente cu personal specializat, în cele mai sigure condiţii şi cu utilaje performante de ultimă generaţie.",
 };
 
 export default function RootLayout({ children }) {
