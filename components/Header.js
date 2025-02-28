@@ -23,7 +23,7 @@ export default function Header() {
                 {/* Logo */}
                 <div className={styles.logo}>
                     <a href="#home" onClick={closeMenu}>
-                        <Image src={"/images/logo.jpg"} alt={"HCN Construct"} width={40} height={40} priority/>
+                        <Image src={"/images/logo.png"} alt={"HCN Construct"} width={160} height={80} priority/>
                     </a>
                 </div>
 

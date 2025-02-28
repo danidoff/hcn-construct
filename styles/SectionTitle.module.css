@@ -17,9 +17,8 @@
 .homeTitleContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
+    align-items: normal; /* Align text to the left */
     justify-content: center;
-    margin-left: -45%; /* Adjust left margin for better positioning */
 }
 
 /* Home Title */

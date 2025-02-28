@@ -11,11 +11,7 @@ export default function Home() {
 
             {/* Loop through JSON data to render sections dynamically */}
             {sectionsData.map((section) => (
-                <div>
-
-                    <Section key={section.id} {...section} />
-                </div>
-
+                <Section key={section.id} {...section} />
             ))}
         </div>
     );
