@@ -1,0 +1,73 @@
+.carousel {
+    /* Center the carousel in the page, allow it to shrink on small screens. */
+    width: 100%;
+    max-width: 600px; /* The carousel (and thus images) won't exceed 600px in width */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+  We place all slides in a row and shift the row
+  left/right with transform: translateX().
+*/
+.carouselInner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*
+  Each slide (carouselItem) is the "viewport" width of this container. 
+  At max, it's 600px wide. 
+*/
+.carouselItem {
+    flex: 0 0 100%; /* Each slide takes up 100% of the container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 
+  Navigation Buttons (Prev/Next). 
+  Absolute position them so they're on top of the carousel. 
+*/
+.navButton {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.7;
+}
+
+.navButton:hover {
+    opacity: 1;
+}
+
+/* Left button */
+.navButton:nth-of-type(1) {
+    left: 0.5rem;
+}
+
+/* Right button */
+.navButton:nth-of-type(2) {
+    right: 0.5rem;
+}
+
+/* 
+  For the images themselves:
+  - Ensure they never exceed the container's max width/height
+  - Let them scale down on smaller screens
+*/
+.carouselItem img {
+    max-width: 100%;
+    max-height: 400px; /* Or any desired max height */
+    object-fit: cover;
+}

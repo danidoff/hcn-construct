@@ -5,8 +5,9 @@ import Image from "next/image";
 import styles from '@/styles/Home.module.css';
 import SectionTitle from "@/components/SectionTitle";
 import {useEffect, useState} from "react";
+import Carousel from "@/components/Carousel";
 
-export default function Section({ id, title, byTitle, content, listItems, backgroundColor, backgroundImage, image }) {
+export default function Section({ id, title, byTitle, content, listItems, backgroundColor, backgroundImage, image, images }) {
     // const { scrollY } = useScroll();
     // const y = useTransform(scrollY, [0, 500], [0, -200]);
 
@@ -30,8 +31,7 @@ export default function Section({ id, title, byTitle, content, listItems, backgr
     return (
         <section id={id} className={`${styles.section} ${id === "home" && !isMobile ? styles.fullScreenImageSection : ""}`}
                  style={{ backgroundImage: id === "home" && !isMobile ? `url(${image})` : "none" }}>
-
-
+            
             <SectionTitle title={title} id={id} byTitle={byTitle}/>
             <motion.div style={{y}} className={styles.contentContainer}>
                 <div className={styles.textContainer}>
@@ -61,6 +61,11 @@ export default function Section({ id, title, byTitle, content, listItems, backgr
                         <Image src={image} alt={title} width={600} height={400} priority/>
                     </div>
                 )}
+                {
+                    id === "gallery" && (
+                        <Carousel images={images} />
+                    )
+                }
             </motion.div>
         </section>
     );

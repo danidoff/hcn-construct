@@ -5,8 +5,8 @@
     "byTitle": "Construct",
     "content": "Oferă servicii de demolări și excavații în toate domeniile de activitate, industriale sau rezidențiale. Unul dintre obiectivele noastre este să investim permanent în oameni și în flota de utilaje pe care o deținem astfel încât să putem oferi clienților servicii de cea mai bună calitate. Personalul nostru este calificat pentru a putea executa orice fel de lucrare mecanizată la cele mai ridicate standarde în condiţii de siguranţă și profesionalism.",
     "backgroundColor": "#ff7e5f",
-    "image": "/images/home.jpg",
-    "backgroundImage": "/images/home.jpg"
+    "image": "/images/gallery4.jpg",
+    "backgroundImage": "/images/gallery4.jpg"
   },
   {
     "id": "about",
@@ -77,11 +77,18 @@
     "image": "/images/services.jpg"
   },
   {
-    "id": "portfolio",
+    "id": "gallery",
     "title": "Portofoliu",
-    "content": "Vezi magia transformărilor noastre! În portofoliul nostru vei găsi imagini înainte și după ale clienților care au avut încredere în serviciile noastre. Fiecare detaliu este realizat cu profesionalism, respectând unicitatea fiecărei persoane.",
+
     "backgroundColor": "#2575fc",
-    "image": "/images/portfolio.jpg"
+    "images": [
+      { "src": "/images/gallery1.jpg", "alt": "Gallery image 1" },
+      { "src": "/images/gallery2.jpg", "alt": "Gallery image 2" },
+      { "src": "/images/gallery3.jpg", "alt": "Gallery image 3" },
+      { "src": "/images/gallery4.jpg", "alt": "Gallery image 4" },
+      { "src": "/images/gallery5.jpg", "alt": "Gallery image 5" },
+      { "src": "/images/gallery6.jpg", "alt": "Gallery image 6" }
+    ]
   },
   {
     "id": "contact",
@@ -95,7 +102,6 @@
         ]
       }
     ],
-    "notes": "Programează-te acum și lasă frumusețea ta să strălucească!",
     "backgroundColor": "#e52d27",
     "image": "/images/contact.jpg"
   }
