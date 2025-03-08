@@ -1,0 +1,53 @@
+.section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px; /* default for all except the first */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Target only the first .section in the DOM */
+.section:first-of-type {
+    padding: 80px 20px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 40px;
+    text-align: left; /* can be left or center */
+}
+
+.sectionText {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.actualImage{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;    
+}
+
+@media (max-width: 900px) {
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

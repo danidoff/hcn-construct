@@ -1,0 +1,28 @@
+.listContainer {
+    margin-top: 20px;
+}
+
+.listTitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff; /* or your color of choice */
+}
+
+.list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding-left: 0; /* inside bullets typically need no left padding */
+}
+
+.list li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .list {
+        padding-left: 1rem;
+    }
+}
+

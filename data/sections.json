@@ -5,7 +5,7 @@
     "byTitle": "Construct",
     "content": "Oferă servicii de demolări și excavații în toate domeniile de activitate, industriale sau rezidențiale. Unul dintre obiectivele noastre este să investim permanent în oameni și în flota de utilaje pe care o deținem astfel încât să putem oferi clienților servicii de cea mai bună calitate. Personalul nostru este calificat pentru a putea executa orice fel de lucrare mecanizată la cele mai ridicate standarde în condiţii de siguranţă și profesionalism.",
     "backgroundColor": "#ff7e5f",
-    "image": "/images/gallery4.jpg",
+    "image": "/images/home.jpg",
     "backgroundImage": "/images/gallery4.jpg"
   },
   {
@@ -78,16 +78,32 @@
   },
   {
     "id": "gallery",
-    "title": "Portofoliu",
-
+    "title": "Utilajele noastre",
     "backgroundColor": "#2575fc",
     "images": [
-      { "src": "/images/gallery1.jpg", "alt": "Gallery image 1" },
-      { "src": "/images/gallery2.jpg", "alt": "Gallery image 2" },
-      { "src": "/images/gallery3.jpg", "alt": "Gallery image 3" },
-      { "src": "/images/gallery4.jpg", "alt": "Gallery image 4" },
-      { "src": "/images/gallery5.jpg", "alt": "Gallery image 5" },
-      { "src": "/images/gallery6.jpg", "alt": "Gallery image 6" }
+      { "src": "/images/about.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/contact.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/home.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/services.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery1.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery2.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery3.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery4.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery5.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery6.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery7.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery8.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery9.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery10.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery11.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery12.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery13.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery14.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery15.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery16.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery17.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery18.jpg", "alt": "Utilajele noastre" }
     ]
   },
   {

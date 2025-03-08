@@ -1,94 +1,163 @@
-/* HEADER */
+/************************************
+   BASIC GLOBAL COLORS (optional):
+   If you want black background 
+   and white text by default
+   throughout your entire site,
+   put these in globals.css instead.
+************************************/
+/*
+html, body {
+  background-color: #000;
+  color: #fff;
+}
+*/
+
+/* Header container */
 .header {
+    position: fixed;       /* pinned on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* black header */
+    color: #fff;
+    z-index: 9999;         /* on top of everything */
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+/* Logo text or image wrapper */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Desktop nav */
+.navListDesktop {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navListDesktop li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navListDesktop li a:hover {
+    color: #f4a261; /* orange hover, for example */
+}
+
+/* Hamburger */
+.hamburger {
+    display: none; /* hidden by default (we show it in mobile) */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/******************************
+   MOBILE OVERLAY NAV
+*******************************/
+
+/* The overlay container, initially hidden by shifting it off-canvas or setting transform/opacity. 
+   We'll just show a *full* 100% overlay. 
+*/
+.mobileNav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 15px 20px;
-    z-index: 1000;
-}
-
-/* NAVIGATION BAR */
-.navbar {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95); /* black overlay */
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* start off screen to the RIGHT */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+}
+
+/* Move overlay onto the screen */
+.navOpen {
+    transform: translateX(0);
+}
+
+/* The container for the overlay content 
+   so we can place the close button 
+   in the top-right corner 
+*/
+.mobileNavContent {
     position: relative;
-    z-index: 10; /* Ensure it's above other elements */
+    width: 100%;
+    height: 100%;
+    /* You can also use max-width if you want narrower overlay content. */
 }
 
-/* LOGO */
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-}
-
-/* DEFAULT NAVIGATION MENU */
-.navList {
-    display: flex;
+/* Actual nav list within the overlay */
+.mobileNavList {
     list-style: none;
-    gap: 20px;
-    margin: 0 30px;
+    text-align: center;
+    margin: 4rem 0 0 0; /* push down if needed */
+    padding: 0;
 }
 
-/* Default Nav Links */
-.navList li a {
-    color: white;
+.mobileNavList li {
+    margin: 1rem 0;
+}
+
+.mobileNavList li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: color 0.3s ease;
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: color 0.2s ease;
 }
 
-.navList li a:hover {
+.mobileNavList li a:hover {
     color: #f4a261;
 }
 
-/* HAMBURGER MENU */
-.hamburger {
-    display: none;
+/* "X" close button in top-right corner */
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
     background: none;
     border: none;
     font-size: 2rem;
-    color: white;
+    color: #fff;
     cursor: pointer;
-    z-index: 1001; /* Ensure it's always on top */
-    position: relative;
+    z-index: 10001;
 }
 
-/* MOBILE MENU STYLES */
+/******************************
+   MEDIA QUERIES
+*******************************/
+
+/* For mobile screens (example: 900px) 
+   Show hamburger, hide desktop nav 
+*/
 @media (max-width: 900px) {
     .hamburger {
-        display: block; /* Show the button */
-        margin-right: 20px;
+        display: inline-block;
     }
 
-    /* Hide default nav menu */
-    .navList {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.95);
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 20px;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 999; /* Ensure it's above all elements */
-        display: none; /* Hide the menu initially */
-        margin-right: 20px;
-    }
-
-    /* When menu is open, show it */
-    .navOpen {
-        display: flex;
-        transform: translateY(0);
+    .navListDesktop {
+        display: none;
     }
 }

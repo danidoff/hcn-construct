@@ -1,0 +1,34 @@
+.heroSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* full screen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    /* dark overlay or offset if desired */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6); /* optional overlay behind text */
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}

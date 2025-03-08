@@ -39,7 +39,7 @@ export default function Carousel({ images = [] }) {
                         <Image
                             src={img.src}
                             alt={img.alt || `Slide ${index}`}
-                            width={600}
+                            width={600} 
                             height={400}
                             style={{ objectFit: 'cover' }}
                             priority={index === 0} // Optionally prioritize the first image

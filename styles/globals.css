@@ -1,3 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide any horizontal overflow */
+    /* box-sizing and background if you like */
+    box-sizing: border-box;
+    background-color: #000; /* black background */
+    color: #fff;            /* white text */
+    font-family: sans-serif; /* or keep your desired fonts */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,11 +26,6 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 header {
     position: fixed;
