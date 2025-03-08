@@ -21,6 +21,7 @@ html, body {
     background-color: #000; /* black header */
     color: #fff;
     z-index: 9999;         /* on top of everything */
+    padding: 0.4rem 1rem;
 }
 
 /* Navbar layout */
@@ -31,6 +32,7 @@ html, body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.5rem 1rem;
+    min-height: 50px;
 }
 
 /* Logo text or image wrapper */
