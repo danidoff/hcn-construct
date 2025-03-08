@@ -23,16 +23,19 @@ export default function SectionContainer({
         <section id={id} className={styles.section}>
             <SectionTitle title={title} byTitle={byTitle} id={id}/>
             <motion.div style={{y}} className={styles.contentContainer}>
-                {/* TEXT CONTENT */}
-                <div className={styles.textContainer}>
-                    {content && <p className={styles.sectionText}>{content}</p>}
+                { (content || listItems) && (
+                    <div className={styles.textContainer}>
+                        {content && <p className={styles.sectionText}>{content}</p>}
 
-                    {/* If there's a list to render */}
-                    {listItems &&
-                        listItems.map((listObj, index) => (
-                            <ListBlock key={index} title={listObj.title} items={listObj.items}/>
-                        ))}
-                </div>
+                        {/* If there's a list to render */}
+                        {listItems &&
+                            listItems.map((listObj, index) => (
+                                <ListBlock key={index} title={listObj.title} items={listObj.items}/>
+                            ))}
+                    </div>
+                )
+                    
+                }
 
                 {/* IMAGE on the right (if any) */}
                 {image && id !== "gallery" && (
@@ -46,6 +49,7 @@ export default function SectionContainer({
                             priority
                         />
                     </div>
+                    
                 )}
 
                 {/* Example of a Carousel if we are in "gallery" */}
