@@ -3,6 +3,7 @@
 import {useState} from "react";
 import styles from "/styles/Header.module.css"; // adjust if needed
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Header() {
             <nav className={styles.navbar}>
                 {/* Logo */}
                 <div className={styles.logo}>
-                    <a href="#home">
+                    <Link href="/">
                         <Image
                             src="/images/logo.png"
                             alt="HCN Construct"
@@ -26,7 +27,7 @@ export default function Header() {
                             height={80}
                             priority
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Hamburger for mobile (but also appears on desktop if you like) */}
@@ -37,10 +38,10 @@ export default function Header() {
 
                 {/* Desktop nav */}
                 <ul className={styles.navListDesktop}>
-                    <li><a href="#about">Despre Noi</a></li>
-                    <li><a href="#services">Servicii</a></li>
-                    <li><a href="#gallery">Utilajele noastre</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><Link href="/detalii">Despre Noi</Link></li>
+                    <li><Link href="/servicii">Servicii</Link></li>
+                    <li><Link href="/galerie">Utilajele noastre</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>
 
@@ -62,7 +63,7 @@ export default function Header() {
 
                     <ul className={styles.mobileNavList}>
                         <li>
-                            <a href="#home" onClick={closeMenu}>
+                            <Link href="/" onClick={closeMenu}>
                                 <Image
                                     src="/images/logo.png"
                                     alt="HCN Construct"
@@ -70,12 +71,12 @@ export default function Header() {
                                     height={80}
                                     priority
                                 />
-                            </a>
+                            </Link>
                         </li>
-                        <li><a href="#about" onClick={closeMenu}>Despre Noi</a></li>
-                        <li><a href="#services" onClick={closeMenu}>Servicii</a></li>
-                        <li><a href="#gallery" onClick={closeMenu}>Utilajele noastre</a></li>
-                        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+                        <li><Link href="/detalii" onClick={closeMenu}>Despre Noi</Link></li>
+                        <li><Link href="/servicii" onClick={closeMenu}>Servicii</Link></li>
+                        <li><Link href="/galerie" onClick={closeMenu}>Utilajele noastre</Link></li>
+                        <li><Link href="/contact" onClick={closeMenu}>Contact</Link></li>
                     </ul>
                 </div>
             </div>

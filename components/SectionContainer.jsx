@@ -38,7 +38,7 @@ export default function SectionContainer({
                 }
 
                 {/* IMAGE on the right (if any) */}
-                {image && id !== "gallery" && (
+                {image && id !== "galerie" && (
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.actualImage}
@@ -53,7 +53,7 @@ export default function SectionContainer({
                 )}
 
                 {/* Example of a Carousel if we are in "gallery" */}
-                {id === "gallery" && images?.length > 0 && <Carousel images={images}/>}
+                {id === "galerie" && images?.length > 0 && <Carousel images={images}/>}
             </motion.div>
         </section>
     );

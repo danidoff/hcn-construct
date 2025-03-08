@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hcn-construct.vercel.app
+
+# Sitemaps
+Sitemap: https://hcn-construct.vercel.app/sitemap.xml
