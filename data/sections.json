@@ -13,7 +13,7 @@
     "title": "Despre Noi",
     "listItems": [
       {
-        "title": "Lucrari de demolare mecanizata",
+        "title": "Lucrări apă-canal",
         "items": ["Executăm lucrări de demolare mecanizate, cu respectarea normelor tehnologice în vigoare, utilizând utilaje şi echipamente cu randament mare de lucru."]
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "title": "Inchiriere utilaje de constructii",
-        "items": ["Furnizăm soluţii complete de închiriere utilaje pentru construcţii în toată ţara şi consultanţă cu privire la utilajele necesare în funcţie de specificul fiecărei lucrări."]
+        "items": ["Furnizăm soluţii complete de închiriere utilaje pentru construcţii în toată ţara şi consultanţă cu privire la utilajele necesare în funcţie de specificul fiecărei lucrări, cu sau fară deservent ."]
       }
     ],
     "backgroundColor": "#feb47b",
@@ -49,11 +49,29 @@
         ]
       },
       {
+        "title": "Alte lucrari",
+        "items": [
+          "Lucrări de drenaj – sisteme de colectare și evacuare a apelor pluviale sau de infiltrație.",
+          "Așternere și compactare – strat de fundație, strat suport și pregătirea terenului pentru construcții.",
+          "Amenajări platforme, parcări și trotuare – lucrări durabile și estetice.",
+          "Montare borduri și pavaje – execuție conform standardelor de calitate"
+        ]
+      },
+      {
         "title": "Închiriere utilaje de constructii",
         "items": [
-          "Buldozere CATERPILLAR - greutate 18-24 tone.",
-          "Cilindri compactori HAMM/BOMAG - 14-20 tone.",
-          "Autobasculante 8x4 - MAN/IVECO/DAF/VOLVO benă 18-22 mc."
+          "Mini excavator HITACHI ZX26 - greutate 2,7 tone",
+          "Mini excavator HITACHI ZX55 - greutate 5,5 tone",
+          "Mini excavator HITACHI Zx60 - greutate 6,2 tone",
+          "Mini excavator KUBOTA U48 - greutate 5 tone",
+          "Excavator HITACHI ZX85U - greutate 8,5 tone",
+          "Excavator TEREX TW70 - greutate 8 tone",
+          "Mini incarcator BOBCAT S175 - 2,8 tone",
+          "Mini incarcator BOBCAT S450 - 2,4 tone",
+          "Incarcator frontal HITACHI ZAXIS ZW250 - 24 tone",
+          "Autobasculante 6x4 - MAN/MERCEDES benă 18-22 mc.",
+          "Autobasculante 6x2 - MAN benă 5 mc.",
+          "Cilindri compactori HAMM - 3,5 tone."
         ]
       }
     ],
@@ -87,7 +105,12 @@
       { "src": "/images/gallery15.jpg", "alt": "Utilajele noastre" },
       { "src": "/images/gallery16.jpg", "alt": "Utilajele noastre" },
       { "src": "/images/gallery17.jpg", "alt": "Utilajele noastre" },
-      { "src": "/images/gallery18.jpg", "alt": "Utilajele noastre" }
+      { "src": "/images/gallery18.jpg", "alt": "Utilajele noastre" },
+      { "src": "/images/gallery19.jpg", "alt": "Utilajele noastre"},
+      { "src": "/images/gallery20.jpg", "alt": "Utilajele noastre"},
+      { "src": "/images/gallery21.jpg", "alt": "Utilajele noastre"},
+      { "src": "/images/gallery22.jpg", "alt": "Utilajele noastre"},
+      { "src": "/images/gallery23.jpg", "alt": "Utilajele noastre"}
     ]
   },
   {
