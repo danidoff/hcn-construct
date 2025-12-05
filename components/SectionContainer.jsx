@@ -2,7 +2,7 @@
 import {motion, useScroll, useSpring, useTransform} from "framer-motion";
 import Image from "next/image";
 import ListBlock from "./ListBlock";
-import styles from "/styles/SectionContainer.module.css";
+import styles from "../styles/SectionContainer.module.css";
 import SectionTitle from "@/components/SectionTitle";
 import Carousel from "@/components/Carousel";
 
