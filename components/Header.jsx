@@ -1,7 +1,7 @@
 "use client";
 
 import {useState} from "react";
-import styles from "/styles/Header.module.css"; // adjust if needed
+import styles from "../styles/Header.module.css"; // adjust if needed
 import Image from "next/image";
 import Link from "next/link";
 

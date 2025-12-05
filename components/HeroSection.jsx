@@ -1,7 +1,6 @@
 "use client";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Image from "next/image";
-import styles from "/styles/HeroSection.module.css"; // We'll define new styles
+import styles from "../styles/HeroSection.module.css"; // We'll define new styles
 import SectionTitle from "@/components/SectionTitle";
 
 export default function HeroSection({ id, title, byTitle, content, image }) {

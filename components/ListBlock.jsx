@@ -1,5 +1,5 @@
 "use client";
-import styles from "/styles/ListBlock.module.css";
+import styles from "../styles/ListBlock.module.css";
 
 export default function ListBlock({title, items = []}) {
     return (
