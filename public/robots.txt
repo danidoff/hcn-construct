@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://hcn-construct.vercel.app
+Host: https://www.hcn-construct.ro
 
 # Sitemaps
-Sitemap: https://hcn-construct.vercel.app/sitemap.xml
+Sitemap: https://www.hcn-construct.ro/sitemap.xml

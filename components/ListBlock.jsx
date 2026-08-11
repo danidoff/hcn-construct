@@ -1,10 +1,10 @@
 "use client";
 import styles from "../styles/ListBlock.module.css";
 
-export default function ListBlock({title, items = []}) {
+export default function ListBlock({title, items = [], as: Tag = 'h2'}) {
     return (
         <div className={styles.listContainer}>
-            <h2 className={styles.listTitle}>{title}</h2>
+            <Tag className={styles.listTitle}>{title}</Tag>
             <ul className={styles.list}>
                 {items.map((item, idx) => {
                     if (item.startsWith("Telefon")) {

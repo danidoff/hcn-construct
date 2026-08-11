@@ -1,0 +1,243 @@
+.body {
+    display: block;
+    background: var(--content-bg);
+    color: var(--content-text);
+    padding: 0 20px 80px;
+    text-align: left;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionHeading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 1.5rem;
+    color: var(--content-text);
+}
+
+/* Intro row: text + optional image side by side */
+.introRow {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 3rem;
+}
+
+.introText {
+    flex: 1.2;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: var(--content-text-secondary);
+    margin: 0 0 2rem;
+}
+
+.inlineLink {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.introImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.introImage img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+/* Card grid for service/list groups.
+   --grid-cols is set per page to a divisor of that page's item count,
+   so a row never ends with a single orphaned card. */
+.grid {
+    --grid-cols: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 720px) {
+    .grid {
+        grid-template-columns: repeat(var(--grid-cols), 1fr);
+    }
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--content-border);
+    border-radius: 14px;
+    padding: 24px 26px;
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 12px;
+    color: var(--content-text);
+}
+
+.cardList {
+    margin: 0;
+    padding-left: 1.1rem;
+    line-height: 1.6;
+    color: var(--content-text-secondary);
+}
+
+.cardList li {
+    margin-bottom: 0.4rem;
+}
+
+.cardList a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+/* FAQ */
+.faqSection {
+    margin-bottom: 3rem;
+}
+
+.faqItem {
+    background: #fff;
+    border: 1px solid var(--content-border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+}
+
+.faqQuestion {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 0 0 6px;
+    color: var(--content-text);
+}
+
+.faqAnswer {
+    margin: 0;
+    line-height: 1.55;
+    color: var(--content-text-secondary);
+}
+
+/* CTA button */
+.cta {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.ctaButton {
+    display: inline-block;
+    background: var(--accent);
+    color: #1a1200;
+    font-weight: bold;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.ctaButton:hover {
+    background: var(--accent-dark);
+    color: #fff;
+}
+
+/* Plain info block (used on Detalii/Contact secondary sections) */
+.infoSection {
+    margin-bottom: 3rem;
+}
+
+.infoSection p {
+    line-height: 1.65;
+    color: var(--content-text-secondary);
+    font-size: 1.05rem;
+}
+
+/* Contact: NAP card + map side by side */
+.contactRow {
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+
+.napCard {
+    flex: 1;
+    background: #fff;
+    border: 1px solid var(--content-border);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.napCard h2 {
+    margin-top: 0;
+    color: var(--content-text);
+}
+
+.napList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--content-text-secondary);
+}
+
+.napList a {
+    color: var(--accent-dark);
+    font-weight: bold;
+}
+
+.mapWrap {
+    flex: 1;
+    min-height: 320px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--content-border);
+}
+
+.mapEmbed {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: 0;
+    display: block;
+}
+
+/* Gallery grid — many items, a partial last row is expected and fine here */
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.galleryItem {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--content-border);
+}
+
+.galleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .introRow,
+    .contactRow {
+        flex-direction: column;
+    }
+}
