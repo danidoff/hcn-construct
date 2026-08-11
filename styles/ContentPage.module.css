@@ -1,0 +1,60 @@
+.faqSection {
+    width: 100%;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.faqInner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faqHeading {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.faqItem {
+    margin-bottom: 1.5rem;
+}
+
+.faqQuestion {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.faqAnswer {
+    line-height: 1.5;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.infoSection {
+    width: 100%;
+    padding: 40px 20px 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.infoInner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.infoInner p {
+    line-height: 1.6;
+}

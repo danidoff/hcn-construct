@@ -21,7 +21,7 @@ export default function HeroSection({ id, title, byTitle, content, image }) {
         >
             {/* If you want to parallax the entire content: */}
             <motion.div style={{ y }} className={styles.overlay}>
-                <SectionTitle title={title} byTitle={byTitle} id={id} />
+                <SectionTitle title={title} byTitle={byTitle} id={id} as="h1" />
                 <p className={styles.heroContent}>{content}</p>
             </motion.div>
         </section>

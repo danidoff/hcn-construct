@@ -31,7 +31,12 @@ export default function Header() {
                 </div>
 
                 {/* Hamburger for mobile (but also appears on desktop if you like) */}
-                <button className={styles.hamburger} onClick={toggleMenu}>
+                <button
+                    className={styles.hamburger}
+                    onClick={toggleMenu}
+                    aria-label={menuOpen ? "Închide meniul" : "Deschide meniul"}
+                    aria-expanded={menuOpen}
+                >
                     {/* If overlay is open, show X; otherwise show ☰ */}
                     {menuOpen ? "✕" : "☰"}
                 </button>
@@ -57,7 +62,7 @@ export default function Header() {
         */}
                 <div className={styles.mobileNavContent} onClick={(e) => e.stopPropagation()}>
                     {/* X in top-right corner for closing the overlay */}
-                    <button className={styles.closeButton} onClick={closeMenu}>
+                    <button className={styles.closeButton} onClick={closeMenu} aria-label="Închide meniul">
                         ✕
                     </button>
 

@@ -49,10 +49,10 @@ export default function Carousel({ images = [] }) {
             </div>
 
             {/* Navigation Buttons */}
-            <button className={styles.navButton} onClick={prevSlide}>
+            <button className={styles.navButton} onClick={prevSlide} aria-label="Imaginea anterioară">
                 ‹
             </button>
-            <button className={styles.navButton} onClick={nextSlide}>
+            <button className={styles.navButton} onClick={nextSlide} aria-label="Imaginea următoare">
                 ›
             </button>
         </div>

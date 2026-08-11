@@ -9,11 +9,14 @@ import Carousel from "@/components/Carousel";
 export default function SectionContainer({
                                              id,
                                              title,
+                                             titleAs,
                                              byTitle,
                                              content,
                                              listItems,
                                              image,
+                                             imageAlt,
                                              images,
+                                             mapEmbedSrc,
                                          }) {
     const {scrollYProgress} = useScroll();
     const smoothScroll = useSpring(scrollYProgress, {stiffness: 100, damping: 30});
@@ -21,7 +24,7 @@ export default function SectionContainer({
 
     return (
         <section id={id} className={styles.section}>
-            <SectionTitle title={title} byTitle={byTitle} id={id}/>
+            <SectionTitle title={title} byTitle={byTitle} id={id} as={titleAs}/>
             <motion.div style={{y}} className={styles.contentContainer}>
                 { (content || listItems) && (
                     <div className={styles.textContainer}>
@@ -34,22 +37,34 @@ export default function SectionContainer({
                             ))}
                     </div>
                 )
-                    
+
                 }
 
+                {/* Google Maps embed (contact page) takes priority over a static image */}
+                {mapEmbedSrc && (
+                    <div className={styles.imageContainer}>
+                        <iframe
+                            src={mapEmbedSrc}
+                            className={styles.mapEmbed}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Locația HCN Construct pe Google Maps"
+                        />
+                    </div>
+                )}
+
                 {/* IMAGE on the right (if any) */}
-                {image && id !== "galerie" && (
+                {!mapEmbedSrc && image && id !== "galerie" && (
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.actualImage}
                             src={image}
-                            alt={title}
+                            alt={imageAlt || title}
                             width={600}
                             height={400}
-                            priority
                         />
                     </div>
-                    
+
                 )}
 
                 {/* Example of a Carousel if we are in "gallery" */}
