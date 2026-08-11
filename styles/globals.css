@@ -1,11 +1,20 @@
+:root {
+    --accent: #ff9100;
+    --accent-dark: #b35900;
+    --content-bg: #fafafa;
+    --content-text: #1a1a1a;
+    --content-text-secondary: #55534f;
+    --content-border: #e2e0da;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Hide any horizontal overflow */
     /* box-sizing and background if you like */
     box-sizing: border-box;
-    background-color: #000; /* black background */
-    color: #fff;            /* white text */
+    background-color: var(--content-bg);
+    color: var(--content-text);
     font-family: sans-serif; /* or keep your desired fonts */
     scroll-behavior: smooth;
 }
@@ -33,8 +42,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--content-text);
     padding: 10px 20px;
     z-index: 1000;
 }

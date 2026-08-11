@@ -2,6 +2,7 @@ import {Montserrat, Work_Sans} from 'next/font/google';
 import '@/styles/globals.css';
 import LenisProvider from "@/components/LenisProvider";
 import Footer from "@/components/Footer";
+import CallButton from "@/components/CallButton";
 
 const montserrat = Montserrat({subsets: ['latin'], weight: ['400', '700']});
 const workSans = Work_Sans({subsets: ['latin'], weight: ['400', '500', '700']});
@@ -56,6 +57,7 @@ export default function RootLayout({children}) {
         </LenisProvider>
 
         <Footer/>
+        <CallButton/>
 
         <script
             type="application/ld+json"

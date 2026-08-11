@@ -19,6 +19,7 @@ export default function Footer() {
                         <li><Link href="/detalii">Despre Noi</Link></li>
                         <li><Link href="/servicii">Servicii</Link></li>
                         <li><Link href="/galerie">Galerie</Link></li>
+                        <li><Link href="/blog">Blog</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
                     </ul>
                 </nav>

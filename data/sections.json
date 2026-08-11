@@ -11,6 +11,7 @@
   {
     "id": "detalii",
     "title": "Despre Noi",
+    "content": "Suntem o echipă din Vestem, Sibiu, cu experiență în lucrări de excavații, rețele de apă-canal și terasamente pentru clienți din toate domeniile. Lucrăm cu utilaje proprii, bine întreținute, iar pentru firmele sau persoanele care au nevoie de utilaje performante oferim și soluții complete de închiriere.",
     "listItems": [
       {
         "title": "Lucrări apă-canal",
@@ -52,7 +53,7 @@
         "title": "Alte lucrari",
         "items": [
           "Lucrări de drenaj – sisteme de colectare și evacuare a apelor pluviale sau de infiltrație.",
-          "Așternere și compactare – strat de fundație, strat suport și pregătirea terenului pentru construcții.",
+          "Așternare și compactare – strat de fundație, strat suport și pregătirea terenului pentru construcții.",
           "Amenajări platforme, parcări și trotuare – lucrări durabile și estetice.",
           "Montare borduri și pavaje – execuție conform standardelor de calitate"
         ]

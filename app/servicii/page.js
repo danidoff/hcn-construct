@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
-import SectionContainer from "@/components/SectionContainer";
+import PageHero from "@/components/PageHero";
 import sectionsData from "@/data/sections.json";
 import styles from "@/styles/ContentPage.module.css";
 
@@ -59,30 +60,59 @@ export default function ServiciiPage() {
         <>
             <Header/>
 
-            <SectionContainer
-                id="servicii"
+            <PageHero
                 title="Servicii de Excavații, Demolări și Terasamente în Sibiu"
-                titleAs="h1"
-                content="HCN Construct oferă servicii complete de demolări mecanizate, excavații și terasamente pentru proiecte industriale și rezidențiale în Sibiu și împrejurimi. Investim permanent în flota de utilaje și în pregătirea echipei, astfel încât fiecare lucrare să fie executată la standarde ridicate de siguranță și profesionalism, la termenele stabilite cu clientul."
-                listItems={servicii.listItems}
-                image={servicii.image}
-                imageAlt="Utilaj de construcții HCN Construct pe șantier în Sibiu"
+                intro="Demolări mecanizate, excavații, terasamente și închiriere utilaje de construcții pentru proiecte industriale și rezidențiale."
             />
 
-            <section className={styles.faqSection} style={{backgroundColor: servicii.backgroundColor}}>
-                <div className={styles.faqInner}>
-                    <h2 className={styles.faqHeading}>Întrebări frecvente</h2>
-                    {FAQS.map((item) => (
-                        <div key={item.q} className={styles.faqItem}>
-                            <h3 className={styles.faqQuestion}>{item.q}</h3>
-                            <p className={styles.faqAnswer}>{item.a}</p>
+            <div className={styles.body}>
+                <div className={styles.inner}>
+                    <div className={styles.introRow}>
+                        <p className={styles.introText}>
+                            HCN Construct oferă servicii complete de demolări mecanizate, excavații și terasamente
+                            pentru proiecte industriale și rezidențiale în Sibiu și împrejurimi. Investim permanent
+                            în flota de utilaje și în pregătirea echipei, astfel încât fiecare lucrare să fie
+                            executată la standarde ridicate de siguranță și profesionalism, la termenele stabilite
+                            cu clientul.
+                        </p>
+                        <div className={styles.introImage}>
+                            <Image
+                                src={servicii.image}
+                                alt="Utilaj de construcții HCN Construct pe șantier în Sibiu"
+                                width={600}
+                                height={400}
+                            />
                         </div>
-                    ))}
+                    </div>
+
+                    <div className={styles.grid} style={{"--grid-cols": 2}}>
+                        {servicii.listItems.map((group) => (
+                            <div key={group.title} className={styles.card}>
+                                <h2 className={styles.cardTitle}>{group.title}</h2>
+                                <ul className={styles.cardList}>
+                                    {group.items.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className={styles.faqSection}>
+                        <h2 className={styles.sectionHeading}>Întrebări frecvente</h2>
+                        {FAQS.map((item) => (
+                            <div key={item.q} className={styles.faqItem}>
+                                <h3 className={styles.faqQuestion}>{item.q}</h3>
+                                <p className={styles.faqAnswer}>{item.a}</p>
+                            </div>
+                        ))}
+                    </div>
+
                     <p className={styles.cta}>
-                        <Link href="/contact">Cere o ofertă personalizată →</Link>
+                        <Link href="/contact" className={styles.ctaButton}>Cere o ofertă personalizată →</Link>
                     </p>
                 </div>
-            </section>
+            </div>
 
             <script
                 type="application/ld+json"

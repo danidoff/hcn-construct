@@ -1,0 +1,30 @@
+.hero {
+    display: block;
+    background: var(--content-bg);
+    padding: 150px 20px 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.75rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 900px;
+    margin: 0 auto 1rem;
+    line-height: 1.2;
+    color: var(--content-text);
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--content-text-secondary);
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+}

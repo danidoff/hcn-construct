@@ -5,24 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90f2fd2-49f5-4dcb-80fa-3d91c5d419c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contact/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/detalii/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/detalii/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/galerie/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/galerie/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/servicii/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/servicii/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Carousel.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HeroSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeroSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Section.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListBlock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SectionContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SectionTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionTitle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sections.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/sections.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-sitemap.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sitemap-0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap-0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Carousel.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/ContentPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ContentPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/HeroSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/HeroSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/ListBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ListBlock.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/SectionContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/SectionContainer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/SectionTitle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/SectionTitle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "new-features",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "node.js.detected.package.eslint": "true",
@@ -66,6 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2023.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -91,8 +100,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1786449143376</updated>
-      <workItem from="1786449143706" duration="1564000" />
+      <workItem from="1786449143706" duration="6900000" />
     </task>
+    <task id="LOCAL-00001" summary="fix pages">
+      <option name="closed" value="true" />
+      <created>1786450826511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786450826511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix pages">
+      <option name="closed" value="true" />
+      <created>1786450864375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1786450864375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +128,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="fix pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

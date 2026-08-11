@@ -46,6 +46,7 @@ export default function Header() {
                     <li><Link href="/detalii">Despre Noi</Link></li>
                     <li><Link href="/servicii">Servicii</Link></li>
                     <li><Link href="/galerie">Utilajele noastre</Link></li>
+                    <li><Link href="/blog">Blog</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>
@@ -74,13 +75,13 @@ export default function Header() {
                                     alt="HCN Construct"
                                     width={160}
                                     height={80}
-                                    priority
                                 />
                             </Link>
                         </li>
                         <li><Link href="/detalii" onClick={closeMenu}>Despre Noi</Link></li>
                         <li><Link href="/servicii" onClick={closeMenu}>Servicii</Link></li>
                         <li><Link href="/galerie" onClick={closeMenu}>Utilajele noastre</Link></li>
+                        <li><Link href="/blog" onClick={closeMenu}>Blog</Link></li>
                         <li><Link href="/contact" onClick={closeMenu}>Contact</Link></li>
                     </ul>
                 </div>

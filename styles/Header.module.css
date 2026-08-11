@@ -18,8 +18,9 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000; /* black header */
-    color: #fff;
+    background-color: var(--content-bg);
+    color: var(--content-text);
+    border-bottom: 1px solid var(--content-border);
     z-index: 9999;         /* on top of everything */
     padding: 0.4rem 1rem;
 }
@@ -37,7 +38,7 @@ html, body {
 
 /* Logo text or image wrapper */
 .logo a {
-    color: #fff;
+    color: var(--content-text);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -53,14 +54,14 @@ html, body {
 }
 
 .navListDesktop li a {
-    color: #fff;
+    color: var(--content-text);
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .navListDesktop li a:hover {
-    color: #f4a261; /* orange hover, for example */
+    color: var(--accent-dark); /* orange hover, for example */
 }
 
 /* Hamburger */
@@ -69,7 +70,7 @@ html, body {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #fff;
+    color: var(--content-text);
     cursor: pointer;
 }
 
@@ -86,7 +87,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95); /* black overlay */
+    background-color: rgba(250, 250, 250, 0.98);
     transition: transform 0.3s ease;
     transform: translateX(100%); /* start off screen to the RIGHT */
     display: flex;
@@ -123,7 +124,7 @@ html, body {
 }
 
 .mobileNavList li a {
-    color: #fff;
+    color: var(--content-text);
     text-decoration: none;
     font-size: 1.5rem;
     display: inline-block;
@@ -131,7 +132,7 @@ html, body {
 }
 
 .mobileNavList li a:hover {
-    color: #f4a261;
+    color: var(--accent-dark);
 }
 
 /* "X" close button in top-right corner */
@@ -142,7 +143,7 @@ html, body {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #fff;
+    color: var(--content-text);
     cursor: pointer;
     z-index: 10001;
 }

@@ -28,7 +28,9 @@
 
 .sectionText {
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: var(--content-text-secondary);
+    margin: 0 0 24px;
     flex: 1;
     min-width: 0; /* prevents text from pushing the image off-screen */
 }
@@ -59,10 +61,54 @@
     border-radius: 25px;
 }
 
+/* Card grid for listItems groups.
+   --grid-cols is set inline per section to a divisor of that section's
+   group count, so a row never ends with a single orphaned card. */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(var(--grid-cols, 1), 1fr);
+    }
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--content-border);
+    border-top: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+}
+
+.ctaButton {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #1a1200;
+    font-weight: bold;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ctaButton:hover {
+    background: var(--accent-dark);
+    color: #fff;
+}
+
 @media (max-width: 900px) {
     .contentContainer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .grid {
+        text-align: left;
     }
 }

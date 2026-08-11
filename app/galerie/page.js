@@ -1,6 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
-import SectionContainer from "@/components/SectionContainer";
+import PageHero from "@/components/PageHero";
 import sectionsData from "@/data/sections.json";
+import styles from "@/styles/ContentPage.module.css";
 
 const galerie = sectionsData.find((s) => s.id === "galerie");
 
@@ -38,13 +41,36 @@ export default function GaleriePage() {
         <>
             <Header/>
 
-            <SectionContainer
-                id="galerie"
+            <PageHero
                 title="Galeria Utilajelor și Lucrărilor Noastre"
-                titleAs="h1"
-                content="Fotografii din activitatea zilnică HCN Construct: excavatoare și miniexcavatoare Hitachi, Kubota și Terex, autobasculante MAN și Mercedes, încărcătoare frontale și lucrări de excavații, demolări și terasamente executate în Sibiu și împrejurimi."
-                images={galerie.images}
+                intro="Excavatoare și miniexcavatoare Hitachi, Kubota și Terex, autobasculante MAN și Mercedes, încărcătoare frontale și lucrări executate în Sibiu și împrejurimi."
             />
+
+            <div className={styles.body}>
+                <div className={styles.inner}>
+                    <p className={styles.introText}>
+                        Flota este împărțită pe categorii: mini excavatoare Hitachi, Kubota și Zaxis pentru
+                        lucrări în spații restrânse, excavatoare și încărcătoare frontale de capacitate mai mare
+                        pentru terasamente ample, autobasculante MAN și Mercedes pentru transport de materiale, și
+                        mini încărcătoare Bobcat pentru curățare și nivelare teren. Detalii despre fiecare tip de
+                        utilaj și greutățile disponibile găsești pe pagina de{" "}
+                        <Link href="/servicii" className={styles.inlineLink}>servicii și închiriere utilaje</Link>.
+                    </p>
+
+                    <div className={styles.galleryGrid}>
+                        {galerie.images.map((img, index) => (
+                            <div key={`${img.src}-${index}`} className={styles.galleryItem}>
+                                <Image
+                                    src={img.src}
+                                    alt={img.alt}
+                                    fill
+                                    sizes="(max-width: 700px) 100vw, (max-width: 1100px) 33vw, 260px"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
 
             <script
                 type="application/ld+json"
